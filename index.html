@@ -3,7 +3,6 @@
 <head>
 	<title>WEB Designers.org</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
 </head>
 <body>
 	<header>
@@ -11,17 +10,17 @@
 			<img src="C:\Users\MK2S\Downloads\wa\googlelogo_color_272x92dp.png" alt="ICON" class="header">
 			<p class="header">WEB DESIGNERS.org</p>
 		</div> 
-	</header> 	
+	</header>	 
 	<nav class="nav">
 		<ul class="main-list">
 			<li>
 				<a href="#">HOME</a>
 			</li>
 			<li>
-				<a href="#">HTML</a>
-				<ul class="drop-down">
+				<a class="dd" data-list="html-dd" href="#">HTML</a>
+				<ul id="html-dd" class="drop-down hidden">
 					<li><a href="intro-html.html" class="link">Introduction</a></li>
-					<li><a href="" class="link">Basic</a></li>
+					<li><a href="" class="link">Structure</a></li>
 					<li><a href="" class="link">Elements</a></li>
 					<li><a href="" class="link">XHTML</a></li>
 					<li><a href="" class="link">HTML5</a></li>
@@ -29,8 +28,30 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#">CSS</a>
-				<ul class="drop-down">
+				<a class="dd" data-list="css-dd" href="#">CSS</a>
+				<ul id="css-dd" class="drop-down hidden">
+					<li><a href="" class="link">Introduction</a></li>
+					<li><a href="" class="link">Structure</a></li>
+					<li><a href="" class="link">Selectors</a></li>
+					<li><a href="" class="link">Properties</a></li>
+					<li><a href="" class="link">CSS3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="dd" data-list="js-dd" href="#">JAVA SCRIPT</a>
+				<ul id="js-dd" class="drop-down hidden">
+					<li><a href="" class="link">Introduction</a></li>
+					<li><a href="" class="link">Structure</a></li>
+					<li><a href="" class="link">Variables</a></li>
+					<li><a href="" class="link">Functions</a></li>
+					<li><a href="" class="link">Objects</a></li>
+					<li><a href="" class="link">Selectors</a></li>
+					<li><a href="" class="link">DOM Events</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="dd" data-list="jq-dd" href="#">JQUERY</a>
+				<ul id="jq-dd" class="drop-down hidden">
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
@@ -39,8 +60,8 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#">JAVA SCRIPT</a>
-				<ul class="drop-down">
+				<a class="dd" data-list="aj-dd" href="#">ANGULAR JS</a>
+				<ul class="drop-down hidden" id="aj-dd">
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
@@ -49,8 +70,8 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#">JQUERY</a>
-				<ul class="drop-down">
+				<a class="dd" data-list="php-dd" href="#">PHP</a>
+				<ul class="drop-down hidden" id="php-dd">
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
@@ -59,8 +80,8 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#">ANGULAR JS</a>
-				<ul class="drop-down">
+				<a href="#" class="dd" data-list="sql-dd">MYSQL</a>
+				<ul class="drop-down hidden" id="sql-dd">
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
@@ -69,28 +90,8 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#">PHP</a>
-				<ul class="drop-down">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">MYSQL</a>
-				<ul class="drop-down">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">MORE</a>
-				<ul class="drop-down">
+				<a href="#" class="dd" data-list="m-dd">MORE</a>
+				<ul class="drop-down hidden" id="m-dd">
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
 					<li><a href="" class="link"></a></li>
@@ -100,5 +101,7 @@
 			</li>
 		</ul>
 	</nav>
+	<script src="jq.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
