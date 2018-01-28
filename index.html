@@ -12,95 +12,107 @@
 		</div> 
 	</header>	 
 	<nav class="nav">
-		<ul class="main-list">
-			<li>
-				<a href="#">HOME</a>
-			</li>
-			<li>
-				<a class="dd" data-list="html-dd" href="#">HTML</a>
-				<ul id="html-dd" class="drop-down hidden">
-					<li><a href="intro-html.html" class="link">Introduction</a></li>
-					<li><a href="" class="link">Structure</a></li>
-					<li><a href="" class="link">Elements</a></li>
-					<li><a href="" class="link">XHTML</a></li>
-					<li><a href="" class="link">HTML5</a></li>
-					<li><a href="" class="link">Tag List</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="dd" data-list="css-dd" href="#">CSS</a>
-				<ul id="css-dd" class="drop-down hidden">
-					<li><a href="" class="link">Introduction</a></li>
-					<li><a href="" class="link">Structure</a></li>
-					<li><a href="" class="link">Selectors</a></li>
-					<li><a href="" class="link">Properties</a></li>
-					<li><a href="" class="link">CSS3</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="dd" data-list="js-dd" href="#">JAVA SCRIPT</a>
-				<ul id="js-dd" class="drop-down hidden">
-					<li><a href="" class="link">Introduction</a></li>
-					<li><a href="" class="link">Structure</a></li>
-					<li><a href="" class="link">Variables</a></li>
-					<li><a href="" class="link">Functions</a></li>
-					<li><a href="" class="link">Objects</a></li>
-					<li><a href="" class="link">Selectors</a></li>
-					<li><a href="" class="link">DOM Events</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="dd" data-list="jq-dd" href="#">JQUERY</a>
-				<ul id="jq-dd" class="drop-down hidden">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="dd" data-list="aj-dd" href="#">ANGULAR JS</a>
-				<ul class="drop-down hidden" id="aj-dd">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="dd" data-list="php-dd" href="#">PHP</a>
-				<ul class="drop-down hidden" id="php-dd">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#" class="dd" data-list="sql-dd">MYSQL</a>
-				<ul class="drop-down hidden" id="sql-dd">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#" class="dd" data-list="m-dd">MORE</a>
-				<ul class="drop-down hidden" id="m-dd">
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-					<li><a href="" class="link"></a></li>
-				</ul>
-			</li>
-		</ul>
+		<div id="navigation">
+			<div id="menu-icon" class="container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<ul id="main-list">
+				<li>
+					<a href="#">HOME</a>
+				</li>
+				<li>
+					<a class="dd" data-list="html-dd" href="#">HTML</a>
+					<ul id="html-dd" class="drop-down hidden">
+						<li><a href="intro-html.html" class="link">Introduction</a></li>
+						<li><a href="" class="link">Structure</a></li>
+						<li><a href="" class="link">Elements</a></li>
+						<li><a href="" class="link">XHTML</a></li>
+						<li><a href="" class="link">HTML5</a></li>
+						<li><a href="" class="link">Tag List</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dd" data-list="css-dd" href="#">CSS</a>
+					<ul id="css-dd" class="drop-down hidden">
+						<li><a href="" class="link">Introduction</a></li>
+						<li><a href="" class="link">Structure</a></li>
+						<li><a href="" class="link">Selectors</a></li>
+						<li><a href="" class="link">Properties</a></li>
+						<li><a href="" class="link">CSS3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dd" data-list="js-dd" href="#">JAVA SCRIPT</a>
+					<ul id="js-dd" class="drop-down hidden">
+						<li><a href="" class="link">Introduction</a></li>
+						<li><a href="" class="link">Structure</a></li>
+						<li><a href="" class="link">Variables</a></li>
+						<li><a href="" class="link">Functions</a></li>
+						<li><a href="" class="link">Objects</a></li>
+						<li><a href="" class="link">Selectors</a></li>
+						<li><a href="" class="link">DOM Events</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dd" data-list="jq-dd" href="#">JQUERY</a>
+					<ul id="jq-dd" class="drop-down hidden">
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dd" data-list="aj-dd" href="#">ANGULAR JS</a>
+					<ul class="drop-down hidden" id="aj-dd">
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dd" data-list="php-dd" href="#">PHP</a>
+					<ul class="drop-down hidden" id="php-dd">
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="dd" data-list="sql-dd">MYSQL</a>
+					<ul class="drop-down hidden" id="sql-dd">
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="dd" data-list="m-dd">MORE</a>
+					<ul class="drop-down hidden" id="m-dd">
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+						<li><a href="" class="link"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</nav>
+	<script>
+		function myFunction(x) {
+	    	x.classList.toggle("change");
+		}	
+	</script>
 	<script src="jq.js"></script>
 	<script src="script.js"></script>
 </body>
