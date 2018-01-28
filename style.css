@@ -72,8 +72,9 @@ p.header {
 }
 
 #navigation ul#main-list li ul.drop-down li{
-	padding: 5px;
-
+	padding: 5px 0;
+	margin: 0;
+	display: block;
 }
 
 #navigation ul#main-list li ul.drop-down li:hover{
@@ -84,7 +85,6 @@ p.header {
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
-	width: 150px;
 } 
 
 @media (max-width : 870px) {
@@ -138,10 +138,10 @@ p.header {
 		position: static;
 
 	}
-	#navigation ul#main-list li {
+	#navigation ul#main-list>li {
 		display: block;
 		margin: 10px 0px;
-		padding-top: 8px;
+		padding: 10px 0px;
 	}
 
 	#navigation ul#main-list li a {
@@ -164,7 +164,7 @@ p.header {
 	}
 
 	#navigation ul#main-list li ul.drop-down li{
-		/*padding: 5px;*/
+		display: block;
 
 	}
 
